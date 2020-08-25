@@ -4,7 +4,7 @@ pipeline {
    stages {
       stage('build master') {
           when { 
-            barnch 'master'
+            branch 'master'
            }
           
          steps {
@@ -13,7 +13,7 @@ pipeline {
          
          stage('build dev') {
           when { 
-            barnch 'dev'
+            branch 'dev'
            }
           
          steps {

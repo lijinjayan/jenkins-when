@@ -11,7 +11,7 @@ pipeline {
          steps {
             echo 'Hello master '
          }
-         
+      }
         stage('build dev') {
           when { 
             branch 'dev'
@@ -21,9 +21,7 @@ pipeline {
             echo 'Hello dev '
          }
            
-         }
-         
+                 
       }
-}
 }
 
